@@ -91,7 +91,7 @@ pca = PCA(n_components=2, random_state=42)
 reduced = pca.fit_transform(X.toarray())
 
 #-scatterplot
-# scatterPlot(df, reduced)
+
 
 # map each index to a group ID
 group_map = {}
@@ -147,3 +147,5 @@ final_df = pd.concat([consolidated_df, remaining_df], ignore_index=True)
 final_df.to_parquet("deduplicated_companies.parquet", index=False)
 
 print(f"Final dataset created: {final_df.shape[0]} rows (from original {df.shape[0]})")
+
+scatterPlot(df, reduced)
