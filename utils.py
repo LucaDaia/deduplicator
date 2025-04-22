@@ -29,6 +29,7 @@ def barChart(top_countries, top_n):
     plt.xticks(rotation=45)
     plt.tight_layout()
     plt.show()
+    plt.close()
 
 
 def scatterPlot(df, reduced):
@@ -44,3 +45,4 @@ def scatterPlot(df, reduced):
     plt.ylabel("PCA Component 2")
     plt.tight_layout()
     plt.show()
+    plt.close()

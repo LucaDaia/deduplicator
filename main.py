@@ -91,7 +91,7 @@ pca = PCA(n_components=2, random_state=42)
 reduced = pca.fit_transform(X.toarray())
 
 #-scatterplot
-scatterPlot(df, reduced)
+# scatterPlot(df, reduced)
 
 # map each index to a group ID
 group_map = {}
